@@ -266,7 +266,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_CwsHOlMXEe-40_SMuHByEg" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.navigator.resources.ProjectExplorer"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.navigator.resources"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1722850791366&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <tags>active</tags>
@@ -422,7 +422,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CpMX4lMXEe-40_SMuHByEg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_1xq2YFMXEe-rKv2GRB4isg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_CPSs5FMXEe-40_SMuHByEg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qgvkoFMrEe-z7ZqjUqpAMA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_CPSs5FMXEe-40_SMuHByEg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CpMX41MXEe-40_SMuHByEg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -430,8 +430,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CpMX5VMXEe-40_SMuHByEg" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_1xsEhVMXEe-rKv2GRB4isg" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" command="_CPSrOFMXEe-40_SMuHByEg"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_1xsrkFMXEe-rKv2GRB4isg" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_CPSrtlMXEe-40_SMuHByEg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qg3gcFMrEe-z7ZqjUqpAMA" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_CPSrOFMXEe-40_SMuHByEg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qg3gcVMrEe-z7ZqjUqpAMA" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_CPSrtlMXEe-40_SMuHByEg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CpMX5lMXEe-40_SMuHByEg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -455,7 +455,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CpMX6lMXEe-40_SMuHByEg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_1xtSoFMXEe-rKv2GRB4isg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_CPSsnVMXEe-40_SMuHByEg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qg4HhFMrEe-z7ZqjUqpAMA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_CPSsnVMXEe-40_SMuHByEg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CpMX61MXEe-40_SMuHByEg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2513,7 +2513,7 @@
   <addons xmi:id="_COL291MXEe-40_SMuHByEg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_COL2-FMXEe-40_SMuHByEg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_COpJ4FMXEe-40_SMuHByEg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_qXStsVMrEe-z7ZqjUqpAMA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_CPPm0FMXEe-40_SMuHByEg" elementId="org.eclipse.team.ui.category.team" name="Version control (Team)" description="Actions that apply when working with a version control system"/>
   <categories xmi:id="_CPPm0VMXEe-40_SMuHByEg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
