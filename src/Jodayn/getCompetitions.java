@@ -1,5 +1,4 @@
 package Jodayn;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -15,13 +14,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class getCompetitions extends Setup {
+	
+
 
 
     @Test()
@@ -36,10 +36,18 @@ public class getCompetitions extends Setup {
                 .withTimeout(Duration.ofSeconds(15))
                 .pollingEvery(Duration.ofSeconds(1))
                 .ignoring(NoSuchElementException.class);
+        
+        // view 24 element
+        WebElement elementCountView =  driver.findElement(By.id("itemsPerPage"));
+        elementCountView.click();
+        Select select = new Select(elementCountView);
+        select.selectByValue("24");
 
+        
         // Click on search button
         WebElement searchButton = driver.findElement(By.id("searchBtnColaps"));
         searchButton.click();
+        Thread.sleep(2000);        
         // Write 'برمجيات' in the search field
         WebElement searchField = driver.findElement(By.id("txtMultipleSearch"));
         searchField.click();
@@ -110,9 +118,6 @@ public class getCompetitions extends Setup {
         FinalSearchButton.click();
         
         
-        
-        
-
         // get the data 
     //    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div h3 a")));
         List<WebElement> titleList = driver.findElements(By.cssSelector("div h3 a"));
@@ -154,7 +159,6 @@ public class getCompetitions extends Setup {
             // print Main Activity Result
             String mainActivityText = mainActivityResult.get(i).getText();
             row.createCell(2).setCellValue(mainActivityText);
-
             row.createCell(3).setCellValue(Information.get(i).getText());
             row.createCell(4).setCellValue(cost.get(i).getText());
         }
