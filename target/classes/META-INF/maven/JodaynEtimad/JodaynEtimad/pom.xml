@@ -5,26 +5,25 @@
 	<groupId>JodaynEtimad</groupId>
 	<artifactId>JodaynEtimad</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	
+
 
 	<dependencies>
-	
-	
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.10.1</version>
-</dependency>
 
-	
-	
+
+		<!--
+		https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.10.1</version>
+		</dependency>
+
+
 		<!-- Selenium -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.20.0</version>
+			<version>4.23.0</version>
 		</dependency>
 
 		<!-- ExtentReports -->
@@ -45,6 +44,13 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.3</version>
 		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
 
 		<!-- TestNG -->
 		<dependency>
@@ -73,19 +79,20 @@
 				</configuration>
 			</plugin>
 
-			
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.3.1</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>${SuiteFileName}</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${SuiteFileName}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
 
 		</plugins>
-		
+
 	</build>
 </project>
