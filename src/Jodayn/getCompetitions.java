@@ -27,7 +27,7 @@ import java.util.function.Function;
 
 public class getCompetitions extends Setup {
 
-	@Test()
+	@Test(priority = 1)
 	public void SearchForCompetition() throws InterruptedException, IOException {
 		// Create a new workbook and sheet
 		Workbook workbook = new XSSFWorkbook();
@@ -37,15 +37,12 @@ public class getCompetitions extends Setup {
 		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(15))
 				.pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		
-	      
-        // view 24 element
-        WebElement elementCountView =  driver.findElement(By.id("itemsPerPage"));
-        elementCountView.click();
-        Select select = new Select(elementCountView);
-        select.selectByValue("24");
 
-		
+		// view 24 element
+		WebElement elementCountView = driver.findElement(By.id("itemsPerPage"));
+		elementCountView.click();
+		Select select = new Select(elementCountView);
+		select.selectByValue("24");
 
 		// Click on search button
 		WebElement searchButton = driver.findElement(By.id("searchBtnColaps"));
@@ -74,12 +71,12 @@ public class getCompetitions extends Setup {
 			}
 		});
 		List<WebElement> liElements = ul.findElements(By.tagName("li"));
-		// Click on "المنافسات النشطة"
+		// Click on "Active competitions"
 		if (liElements.size() > 2) {
 			WebElement secondLiElement = fluentWait.until(new Function<WebDriver, WebElement>() {
 				@Override
 				public WebElement apply(WebDriver driver) {
-					return liElements.get(2);
+					return liElements.get(1);
 				}
 			});
 			Thread.sleep(1000);
@@ -91,7 +88,7 @@ public class getCompetitions extends Setup {
 		WebElement scrollForSearch = driver.findElement(By.id("searchBtn"));
 		actions.moveToElement(scrollForSearch).perform();
 
-		// Click on "لاتصالات وتقنية المعلومات"
+		// Click on "الاتصالات وتقنية المعلومات"
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector(
 				"body > div:nth-child(10) > div:nth-child(2) > div:nth-child(1) > form:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2)"))
@@ -192,7 +189,7 @@ public class getCompetitions extends Setup {
 					nextPageButton.click(); // Click on the "Next" button
 					System.out.println("Navigated to the next page.");
 					// Wait for the next page to load completely
-					Thread.sleep(1000);
+					Thread.sleep(2000);
 
 				} else {
 					System.out.println("No 'Next' button found or it is not clickable. Stopping...");
@@ -205,7 +202,7 @@ public class getCompetitions extends Setup {
 		}
 
 		// Write the output to a file
-		try (FileOutputStream fileOut = new FileOutputStream("C:\\details\\console_output.xlsx")) {
+		try (FileOutputStream fileOut = new FileOutputStream("C:\\Jenkins\\.jenkins\\workspace\\JodaynEtimad\\excel\\Competitions.xlsx")) {
 			workbook.write(fileOut);
 		} finally {
 			workbook.close();
