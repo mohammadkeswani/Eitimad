@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-11T08:03:20 EET" name="Default suite" finished-at="2024-08-11T08:04:08 EET" duration-ms="47594">
+  <suite started-at="2024-08-12T07:37:29 EET" name="Suite" finished-at="2024-08-12T07:37:52 EET" duration-ms="23375">
     <groups>
     </groups>
-    <test started-at="2024-08-11T08:03:20 EET" name="Default test" finished-at="2024-08-11T08:04:08 EET" duration-ms="47594">
+    <test started-at="2024-08-12T07:37:29 EET" name="Test" finished-at="2024-08-12T07:37:52 EET" duration-ms="23375">
       <class name="Jodayn.getCompetitions">
-        <test-method is-config="true" signature="openWebSite()[pri:0, instance:Jodayn.getCompetitions@5f59185e]" started-at="2024-08-11T08:03:20 EET" name="openWebSite" finished-at="2024-08-11T08:03:44 EET" duration-ms="24253" status="PASS">
+        <test-method is-config="true" signature="openWebSite()[pri:0, instance:Jodayn.getCompetitions@5f59185e]" started-at="2024-08-12T07:37:29 EET" name="openWebSite" finished-at="2024-08-12T07:37:32 EET" duration-ms="2790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWebSite -->
-        <test-method signature="SearchForCompetition()[pri:1, instance:Jodayn.getCompetitions@5f59185e]" started-at="2024-08-11T08:03:45 EET" name="SearchForCompetition" finished-at="2024-08-11T08:04:08 EET" duration-ms="23279" status="PASS">
+        <test-method signature="SearchForCompetition()[pri:1, instance:Jodayn.getCompetitions@5f59185e]" started-at="2024-08-12T07:37:32 EET" name="SearchForCompetition" finished-at="2024-08-12T07:37:52 EET" duration-ms="20543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchForCompetition -->
       </class> <!-- Jodayn.getCompetitions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
