@@ -34,7 +34,7 @@ public class getCompetitions extends Setup {
 		Sheet sheet = workbook.createSheet("Competition Data");
 
 		// Define FluentWait
-		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(15))
+		Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(20))
 				.pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
